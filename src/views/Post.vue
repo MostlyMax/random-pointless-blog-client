@@ -52,7 +52,7 @@ export default {
 
             try {
                 const payload = { "recaptcha_token": recaptcha_token, "title": title.value, "body": text.value }
-                const response = await axios.post('/blog/entries/', payload)
+                const response = await axios.post('/api/blog/entries/', payload)
 
                 if (!(response.status === 201)) { throw Error("Unable to post entry") }
 
