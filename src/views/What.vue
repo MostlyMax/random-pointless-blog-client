@@ -1,6 +1,6 @@
 <template>
-  <div class="what">
-      <h3> What is this??? </h3>
+  <div class="what-page">
+      <h1> What is this??? </h1>
       <p>
           Ever get annoyed at how social media gives a voice to the most click-baity idiots?
       </p>
@@ -35,10 +35,16 @@ export default {
 </script>
 
 <style>
-div.what {
+
+div.what-page {
     margin: auto;
     width: 60%;
     font-size: 20px;
+    text-align: justify;
+}
+
+div.what h1 {
+    text-align: center;
 }
 
 </style>

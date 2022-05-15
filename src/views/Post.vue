@@ -1,13 +1,15 @@
 <template>
-  <h1>Make an entry</h1>
-  <form class="entry-form" @submit.prevent="this.handleSubmit" v-on:submit.prevent>
-      <input class="form-title" v-model="title" type="text" placeholder="title" maxlength="64" required />
-      <textarea class="form-text" v-model="text" type="text" placeholder="text: optional" maxlength="256" />
-      <button>Submit</button>
-  </form>
-  <div class="warning" v-if="multiple_entry_warning">Can't make more than one entry per day!</div>
-  <div class="warning" v-if="error_warning">Unable to post entry</div>
-  <div class="success" v-if="entry_submit_success">Your entry has been submitted to the pool!</div>
+<div class="post-page">
+    <h1>Make an entry</h1>
+    <form class="entry-form" @submit.prevent="this.handleSubmit" v-on:submit.prevent>
+        <input class="form-title" v-model="title" type="text" placeholder="title" maxlength="64" required />
+        <textarea class="form-text" v-model="text" type="text" placeholder="text: optional" maxlength="256" />
+        <button>Submit</button>
+    </form>
+    <div class="warning" v-if="multiple_entry_warning">Can't make more than one entry per day!</div>
+    <div class="warning" v-if="error_warning">Unable to post entry</div>
+    <div class="success" v-if="entry_submit_success">Your entry has been submitted to the pool!</div>
+</div>
 </template>
 
 <script>
@@ -83,6 +85,11 @@ export default {
 </script>
 
 <style>
+.post-page {
+    margin: auto;
+    font-size: 20px;
+}
+
 .entry-form {
     display: flex;
     flex-direction: column;
@@ -91,18 +98,21 @@ export default {
 }
 
 .entry-form button {
-    background: #32325c;
+background: #0c1e3e;
     color: white;
     font-weight: bold;
-    border-radius: 4px;
+    border-radius: 100px;
     margin: 5px;
     padding: 5px 30px 5px 30px;
+    border-style: none;
+    font: inherit;
 }
 
 .form-title {
     margin: 10px;
     width: 60%;
     padding: 10px 5px 10px 5px;
+    font: inherit;
     font-size: 24px;
 }
 
@@ -111,7 +121,8 @@ export default {
     width: 60%;
     padding: 10px 5px 100px 5px;
     resize: none;
-    font-size: 14px;
+    font: inherit;
+    font-size: 18px;
 }
 
 .warning {

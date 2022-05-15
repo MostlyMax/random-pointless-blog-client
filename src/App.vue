@@ -1,6 +1,6 @@
 <template>
   <div id="nav-bar">
-    <div class="logo"><p>Random Blog Logo</p></div>
+    <div class="logo"><p>Random Blog</p></div>
     <div id="nav">
         <router-link :to="{ path: '/' }">Home</router-link>
         <router-link :to="{ name: 'What' }">What???</router-link>
@@ -36,7 +36,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   font-weight: bold;
-  color: #32325c;
+  color: #0c1e3e;
   margin: 0;
 }
 
@@ -44,18 +44,18 @@ body {
   padding: 0;
   display: flex;
   align-items: center;
-  background: #acb3d8;
+  background: #0c1e3e;
   margin: 0;
 }
 
 .logo {
   margin: 10px;
-  padding: 5px;
+  padding: 0 12px 0 12px;
   text-align: center;
   border-radius: 8px;
   align-items: center;
-  background:#32325c;
-  color: white;
+  background:#122c5a;
+  color: #38fbdb;
 }
 
 #nav {
@@ -66,7 +66,7 @@ body {
 
 #nav a {
   font-weight: bold;
-  color: #32325c;
+  color: white;
   padding: 10px;
   border-radius: 4px;
   margin: 5px;
@@ -75,6 +75,6 @@ body {
 
 #nav a.router-link-exact-active {
   color: white;
-  background: #ae5fc1;
+  background: #8e52f5;
 }
 </style>

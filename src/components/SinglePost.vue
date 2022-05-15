@@ -15,9 +15,10 @@ export default {
 
 <style>
 .post {
-    background: #acb3d8;
+    background: #122c5a;
+    color: white;
     margin: 20px 10% 20px 10%;
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
     border-radius: 10px;
 
     text-align: left;
