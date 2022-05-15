@@ -17,6 +17,10 @@ import Post from './views/Post.vue'
 
 export default {
   components: { Home, What, Post },
+  metaInfo: {
+    title: "Random Blog",
+    titleTemplate: "%s | An Absolutely Pointless Experience"
+  }
 }
 </script>
 
