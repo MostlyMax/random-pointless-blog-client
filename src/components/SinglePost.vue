@@ -1,5 +1,3 @@
-<!---WARNING: DEPRECATED--->
-
 <template>
     <div class='post'>
         <h3>{{ post.title }}</h3>
@@ -22,6 +20,7 @@ export default {
     border-radius: 10px;
 
     text-align: left;
+    /* font-size: 18px; add if necessary */
 }
 
 .post h3 {
