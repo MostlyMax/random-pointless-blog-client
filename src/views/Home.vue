@@ -1,6 +1,8 @@
 <template>
+<div class="home-page">
     <h1>Featured Posts</h1>
     <PostList :posts="posts"/>
+</div>
 </template>
 
 <script>
@@ -38,5 +40,8 @@ export default {
 </script>
 
 <style>
+.home-page {
+    font-size: 20px;
+}
 
 </style>

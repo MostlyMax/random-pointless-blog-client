@@ -43,7 +43,7 @@ div.what-page {
     text-align: justify;
 }
 
-div.what h1 {
+div.what-page h1 {
     text-align: center;
 }
 
